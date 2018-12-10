@@ -1,0 +1,119 @@
+@charset "utf-8";
+/*html5*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+/*css reset*/
+html{font-size: 12px;}
+body{
+    font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: rgb(0, 0, 0);
+    color: #fefefe;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -webkit-print-color-adjust: exact;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: inherit;
+}
+ul, ol { list-style-type: none; }
+img {
+    border: none;
+    vertical-align: top;
+}
+*{margin:0;padding: 0;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+/*common css*/
+::-webkit-scrollbar{
+    width: 8px;
+    height: 4px;
+    background-color: rgba(75, 65, 69, 0.88);
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(242, 242, 242, 0.37);
+    background-color: #525c92;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    -webkit-box-shadow: inset 0 0 6px rgba(232, 191, 171, 0.19);
+    background-color: rgb(255, 254, 0);
+}
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(115, 232, 67, 0.19);
+    background-color: rgba(255, 254, 7, 0.66);
+}
+.fl{float: left;}.fr{float: right;}.clearf{overflow: hidden;zoom: 1;}.clearf::after,.clearf::before{display: block;content: "";width: 100%;height: 0;clear: both;zoom:1;overflow:hidden;visibility: hidden;}
+a, a:visited {
+    text-decoration: none;
+    color: #ff0;
+}
+a:hover { text-decoration: underline; color: #ff0;}
+.txt-center{text-align: center;}
+.txt-left{text-align: left;}
+.txt-right{text-align: right;}
+.border-solid-2{border: 2px solid #b9c5c5;}
+.fixed-top{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.fixed-bottom{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+#nbj_resume{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.page{
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.content{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+section.page  .ctn_title{
+    margin: 80px auto 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.ctn_title hr{
+    margin: 0 auto;
+    width: 0;
+    height: 4px;
+    border: none;
+    background-color:#ff0;
+    transition: all 0.1s 0.5s;
+}
+
