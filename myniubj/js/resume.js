@@ -288,3 +288,20 @@ function accordion(This){
         exp_list[temp].style.width = "86%";
     }
 }
+// 时间戳
+!function(){
+    var foottime=document.getElementById("foot-time");
+    setInterval(function(){
+        var date = new Date(),
+            y = date.getFullYear(),
+            m = date.getMonth() + 1,
+            d = date.getDate(),
+            h = date.getHours(),
+            mm = date.getMinutes(),
+            s = date.getSeconds(),
+            newTime = y+"-"+toTwo(m)+"-"+toTwo(d)+" "+toTwo(h)+":"+toTwo(mm)+":"+toTwo(s);
+        foottime.innerHtml = newTime;
+    },1000);
+}();
+//补0
+function toTwo(n){return n<10?"0"+n:n;}
