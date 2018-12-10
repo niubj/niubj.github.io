@@ -300,7 +300,7 @@ function accordion(This){
             mm = date.getMinutes(),
             s = date.getSeconds(),
             newTime = y+"-"+toTwo(m)+"-"+toTwo(d)+" "+toTwo(h)+":"+toTwo(mm)+":"+toTwo(s);
-        foottime.innerHtml = newTime;
+        foottime.innerHTML = newTime;
     },1000);
 }();
 //补0
